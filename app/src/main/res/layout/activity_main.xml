@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/emptydish"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,43 +16,72 @@
         android:layout_marginTop="16dp"
         android:text="CookBook"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#ff8f33"
-        app:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/background_light"
+        app:fontFamily="cursive"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="160dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="256dp"
-        android:text="Apple"
+        android:layout_width="72dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="204dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/apple" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="160dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="48dp"
-        android:text="Potato"
+        android:layout_width="80dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="240dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:srcCompat="@mipmap/potato" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="240dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/spinach" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="160dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="56dp"
-        android:text="Spinach"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        android:layout_marginBottom="316dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginStart="148dp"
+        android:text="Choose Ingredient"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginRight="188dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/fryingpan" />
 
 
 </android.support.constraint.ConstraintLayout>
