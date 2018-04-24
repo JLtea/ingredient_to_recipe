@@ -6,20 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ExploreRecipes"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:text="Explore Recipes"
+        tools:layout_editor_absoluteX="384dp"
+        tools:layout_editor_absoluteY="172dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="ExploreRecipes" />
-
-
+        android:text="AvailableRecipes"/>
 </RelativeLayout>
