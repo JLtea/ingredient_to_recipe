@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -38,13 +39,15 @@ public class ShowList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_list);
-        String key = getIntent().getStringExtra("key");
+        String key = getIntent().getStringExtra("key").toLowerCase();
         //Toast.makeText(this, key + " recipes", Toast.LENGTH_SHORT).show();
         seturl(key);
         searchRecipe();
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        TextView text = findViewById(R.id.text);
+        text.setText(key + " recipes");
         listItems = new ArrayList<>();
     }
 

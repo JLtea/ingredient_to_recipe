@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:hint="Search Ingredients"
             android:imeOptions="actionDone"
+            android:textColor="@android:color/white"
             android:singleLine="true"
             android:textColorHint="@color/colorPrimary" />
     </android.support.design.widget.TextInputLayout>

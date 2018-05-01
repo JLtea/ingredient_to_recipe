@@ -14,24 +14,30 @@
             android:layout_width="100dp"
             android:layout_height="80dp"
             android:padding="0.75dp"
+            android:layout_centerVertical="true"
             android:scaleType="centerCrop"/>
+
         <TextView
             android:id="@+id/dishName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:layout_toRightOf="@+id/dishImage"
             android:text="title"
-            android:textAppearance="?android:attr/textAppearanceSmall"/>
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/publisher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:layout_below="@+id/dishName"
+            android:layout_margin="10dp"
             android:layout_toRightOf="@+id/dishImage"
             android:text="publisher"
-            android:textAppearance="?android:attr/textAppearanceSmall"/>
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp" />
 
 
 

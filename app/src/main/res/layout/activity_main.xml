@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/emptydish"
+    android:background="@drawable/main"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="124dp"
         android:text="CookBook"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/background_light"
@@ -23,12 +23,13 @@
 
     <Button
         android:id="@+id/searchButton"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="124dp"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="492dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
         android:text="Search Ingredient"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
