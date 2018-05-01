@@ -21,67 +21,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/button2"
-        android:layout_width="72dp"
-        android:layout_height="74dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="204dp"
-        android:background="@color/cardview_shadow_end_color"
-        android:scaleType="fitStart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/apple" />
-
-    <ImageButton
-        android:id="@+id/button3"
-        android:layout_width="80dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="240dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginStart="96dp"
-        android:background="@color/cardview_shadow_end_color"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/potato" />
-
-    <ImageButton
-        android:id="@+id/button4"
-        android:layout_width="80dp"
-        android:layout_height="77dp"
-        android:layout_marginBottom="240dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:background="@color/cardview_shadow_end_color"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/spinach" />
-
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/searchButton"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="316dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginStart="148dp"
-        android:text="Choose Ingredient"
-        app:fontFamily="casual"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="86dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="188dp"
-        android:layout_marginRight="188dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/fryingpan" />
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="316dp"
+        android:text="Search Ingredient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -1,8 +1,10 @@
 package com.example.taele.finalproject;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -14,31 +16,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ImageButton apple = findViewById(R.id.button2);
-        apple.setOnClickListener(new View.OnClickListener() {
+        final Button search = findViewById(R.id.searchButton);
+        search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startRecipe("Apple");
-            }
-        });
-        final ImageButton potato = findViewById(R.id.button3);
-        potato.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startRecipe("Potato");
-            }
-        });
-        final ImageButton spinach = findViewById(R.id.button4);
-        spinach.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startRecipe("Spinach");
+                SearchStart();
             }
         });
     }
-    public void startRecipe(String key) {
-        Intent intent = new Intent(this, DisplayRecipes.class);
-        intent.putExtra("key", key);
+
+    public void SearchStart() {
+        Intent intent = new Intent(this, Search.class);
         startActivity(intent);
     }
+
 }

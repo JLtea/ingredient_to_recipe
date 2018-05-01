@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:padding="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/dish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="title"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/publish"
+        android:layout_marginTop="7dp"
+        android:text="ingredients"/>
+    <TextView
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="publisher"/>
+</RelativeLayout>
